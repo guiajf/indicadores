@@ -1,4 +1,4 @@
-# Indicadores Econômico-financeiros
+# Indicadores econômico-financeiros
 
 App para visualização de indicadores econômico-financeiros:
 
