@@ -10,6 +10,7 @@ from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
 import time
 import functools
+import pytz
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -216,8 +217,11 @@ def atualizar_grafico(indicador_nome):
     ]
     
     # Data de atualização
-    atualizacao = f"Última atualização: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}"
-    
+    # Define o fuso horário de São Paulo
+    tz_sao_paulo = pytz.timezone('America/Sao_Paulo')
+    data_atual_sp = datetime.now(tz_sao_paulo)
+    atualizacao = f"Última atualização: {data_atual_sp.strftime('%d/%m/%Y %H:%M:%S')} (horário de Brasília)"
+        
     return fig, info_content, atualizacao
 
 # Rota principal do Flask
