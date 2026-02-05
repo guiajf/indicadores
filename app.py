@@ -105,14 +105,14 @@ def baixar_dados(indicador_nome):
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([
-            html.H1("Dashboard de indicadores econômicos", 
+            html.H1("Painel de indicadores econômicos", 
                    className="text-center my-4")
         ], width=12)
     ]),
     
     dbc.Row([
         dbc.Col([
-            html.Label("Selecione o Indicador:", className="fw-bold"),
+            html.Label("Selecione o indicador:", className="fw-bold"),
             dcc.Dropdown(
                 id='dropdown-indicador',
                 options=[{'label': k, 'value': k} for k in indicadores.keys()],
@@ -144,7 +144,7 @@ app.layout = dbc.Container([
     
     dbc.Row([
         dbc.Col([
-            html.P("© 2024 Dashboard econômico - dados do Yahoo Finance e Banco Central do Brasil", 
+            html.P("© 2024 Painel Econômico - dados do Yahoo Finance e Banco Central do Brasil", 
                   className="text-center text-muted")
         ], width=12)
     ])
@@ -229,7 +229,6 @@ def atualizar_grafico(indicador_nome):
 def index():
     return app.index()
 
-# Adicione no final do arquivo:
 if __name__ == '__main__':
     app.run_server(
         host='0.0.0.0',
