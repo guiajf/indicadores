@@ -7,3 +7,4 @@ numpy==1.26.4
 yfinance==1.1.0
 plotly==5.18.0
 python-bcb==0.3.3
+pytz==2025.2
