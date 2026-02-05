@@ -105,7 +105,7 @@ def baixar_dados(indicador_nome):
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([
-            html.H1("Dashboard de Indicadores Econômicos Brasileiros", 
+            html.H1("Dashboard de indicadores econômicos", 
                    className="text-center my-4")
         ], width=12)
     ]),
@@ -123,7 +123,7 @@ app.layout = dbc.Container([
             
             dbc.Card([
                 dbc.CardBody([
-                    html.H5("Informações do Indicador", className="card-title"),
+                    html.H5("Informações do indicador", className="card-title"),
                     html.Div(id='info-indicador', className="card-text")
                 ])
             ], className="mb-4"),
@@ -144,7 +144,7 @@ app.layout = dbc.Container([
     
     dbc.Row([
         dbc.Col([
-            html.P("© 2024 Dashboard Econômico - Dados do Yahoo Finance e Banco Central do Brasil", 
+            html.P("© 2024 Dashboard econômico - dados do Yahoo Finance e Banco Central do Brasil", 
                   className="text-center text-muted")
         ], width=12)
     ])
