@@ -14,6 +14,4 @@ Fontes:
 * Yahoo Finance
 * Banco Central do Brasil
 
-  **Acesse aqui**
-  
-  [](https://indicadores-a3wu.onrender.com/)
+  [**Acesse aqui**](https://indicadores-a3wu.onrender.com/)
